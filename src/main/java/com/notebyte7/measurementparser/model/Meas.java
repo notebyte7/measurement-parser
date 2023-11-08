@@ -26,7 +26,7 @@ public class Meas {
     @Column(name = "lat")
     Double latitude;
     @Column(name = "system")
-    String system;
+    Integer system;
     @Column(name = "cell_type")
     Integer cellType;
     @Column(name = "band")
@@ -40,7 +40,7 @@ public class Meas {
     @Column(name = "quality")
     Double quality;
 
-    public Meas(LocalDateTime dateTime, Double longitude, Double latitude, String system, Integer cellType, String band, Integer channel, Integer identity, Double power, Double quality) {
+    public Meas(LocalDateTime dateTime, Double longitude, Double latitude, Integer system, Integer cellType, String band, Integer channel, Integer identity, Double power, Double quality) {
         this.dateTime = dateTime;
         this.longitude = longitude;
         this.latitude = latitude;
